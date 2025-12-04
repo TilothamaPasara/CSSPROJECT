@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Job Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="logo">DevJobs</div>
+        <nav class="nav">
+            <a href="#">Post a Job</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+
+    <section class="search-bar">
+        <input type="text" placeholder="Search by role, company, or skills...">
+    </section>
+
+    <main class="container">
+
+
+        <aside class="filters">
+            <h2>Filters</h2>
+
+            <div class="filter-group">
+                <label>Role</label>
+                <select>
+                    <option>Frontend Developer</option>
+                    <option>Backend Developer</option>
+                    <option>Full-Stack Developer</option>
+                    <option>UI/UX Designer</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Tech Stack</label>
+                <div class="tag-list">
+                    <button class="tag">HTML</button>
+                    <button class="tag">CSS</button>
+                    <button class="tag">JavaScript</button>
+                    <button class="tag">React</button>
+                    <button class="tag">Node</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>Location</label>
+                <select>
+                    <option>Remote</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Europe</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Experience Level</label>
+                <select>
+                    <option>Fresher</option>
+                    <option>1–3 Years</option>
+                    <option>3–5 Years</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+        </aside>
+
+
+        <section class="jobs">
+
+
+            <div class="job-card">
+                <div>
+                    <h3>Frontend Developer</h3>
+                    <p class="company">Google</p>
+                    <p class="location">Hyderabad, India</p>
+                    <div class="chips">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+                </div>
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <div>
+                    <h3>Full-Stack Engineer</h3>
+                    <p class="company">Microsoft</p>
+                    <p class="location">Remote</p>
+                    <div class="chips">
+                        <span>Node</span>
+                        <span>React</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <div>
+                    <h3>Backend Developer</h3>
+                    <p class="company">Amazon</p>
+                    <p class="location">Bengaluru, India</p>
+                    <div class="chips">
+                        <span>Java</span>
+                        <span>AWS</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <div>
+                    <h3>UI/UX Designer</h3>
+                    <p class="company">Spotify</p>
+                    <p class="location">USA</p>
+                    <div class="chips">
+                        <span>Figma</span>
+                        <span>Wireframes</span>
+                    </div>
+                </div>
+                <button class="apply-btn">Apply</button>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
