@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    background: #f5f7fb;
+    font-family: Arial, sans-serif;
+    color: #0d1b2a;
+}
+
+/* HEADER */
+.header {
+    background: #0d1b2a;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    padding: 20px 40px;
+    background: white;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* LAYOUT */
+.container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+/* FILTER SIDEBAR */
+.filters {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #d9e0ea;
+}
+
+.filters h2 {
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* TAGS */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #e0e7ff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tag:hover {
+    background: #c7d2fe;
+}
+
+.tag:focus {
+    background: #c7d2fe;
+}
+
+/* JOB CARDS */
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #d9e0ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company {
+    color: #334155;
+    font-size: 14px;
+}
+
+.location {
+    color: #475569;
+    font-size: 13px;
+}
+
+.chips span {
+    display: inline-block;
+    background: #d1fae5;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #065f46;
+}
+
+.apply-btn {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background: #059669;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
